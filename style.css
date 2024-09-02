@@ -6,9 +6,57 @@
   font-style: normal;
 }
 
+body {
+  background-color: #ececec;
+}
+
 header {
   background-color: #34825f;
   color: #ffffff;
   text-align: center;
   padding: 1rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+table {
+  margin: 1rem 0;
+  background-color: #fafafa;
+  border: 2px solid #343a40;
+}
+
+thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid #343a40;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  width: 150px;
+}
+
+.disciplina {
+  background-color: #34825f;
+  color: #ffffff;
+}
+
+.acao button {
+  background-color: #fafafa;
+  border: none;
+  margin: 0.4rem 0;
+  cursor: pointer;
+}
+
+.acao-remover {
+  color: #ff0000;
 }

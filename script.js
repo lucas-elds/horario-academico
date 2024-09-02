@@ -1,8 +1,29 @@
 let linha = document.querySelectorAll(".linha");
 let botaoRemover = document.querySelectorAll(".acao-remover");
 
+let disciplinaHTML = '<p class="disciplina">Disciplina</p>';
+let professorHTML = '<p class="professor">Professor</p>';
+let salaHTML = '<p class="sala">Sala</p>';
+
 let removerLinhaHTML = '<i class="fa-solid fa-trash-can"></i> Remover linha';
 let adicionarLinhaHTML = '<i class="fa-solid fa-plus"></i> Adicionar linha';
+
+function limparLinha(n) {
+  let aula = linha[n].querySelectorAll(".aula");
+  for (let i in aula) {
+    aula[i].innerHTML = "";
+  }
+}
+
+function reiniciarLinha(n) {
+  limparLinha(n);
+  let aula = linha[n].querySelectorAll(".aula");
+  for (let i = 0; i < 5; i++) {
+    aula[i].insertAdjacentHTML("beforeend", disciplinaHTML);
+    aula[i].insertAdjacentHTML("beforeend", professorHTML);
+    aula[i].insertAdjacentHTML("beforeend", salaHTML);
+  }
+}
 
 function removerLinha(n) {
   if (linha[n].classList.contains("removida")) {
@@ -15,7 +36,3 @@ function removerLinha(n) {
     botaoRemover[n].innerHTML = adicionarLinhaHTML;
   }
 }
-
-// let disciplina = '<p class="disciplina">Disciplina</p>';
-// let professor = '<p class="professor">Professor</p>';
-// let sala = '<p class="sala">Sala</p>';

@@ -11,7 +11,7 @@ function removerLinha(n) {
     botaoRemover[n].innerHTML = removerLinhaHTML;
   } else {
     linha[n].classList.add("removida");
-    botaoRemover[n].style.color = "#34825f";
+    botaoRemover[n].style.color = "#00b000";
     botaoRemover[n].innerHTML = adicionarLinhaHTML;
   }
 }

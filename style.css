@@ -60,3 +60,12 @@ td {
 .acao-remover {
   color: #ff0000;
 }
+
+.removida {
+  color: #a1a1a1;
+  text-decoration: line-through;
+}
+
+.removida .disciplina {
+  background-color: #a1a1a1;
+}

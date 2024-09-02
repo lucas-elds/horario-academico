@@ -38,6 +38,46 @@
         </thead>
         <tbody>
           <tr class="linha">
+            <th scope="row">11:30 - 12:20</th>
+            <td contenteditable="true">
+              <p class="disciplina">Disciplina</p>
+              <p class="professor">Professor</p>
+              <p class="sala">Sala</p>
+            </td>
+            <td contenteditable="true">
+              <p class="disciplina">Disciplina</p>
+              <p class="professor">Professor</p>
+              <p class="sala">Sala</p>
+            </td>
+            <td contenteditable="true">
+              <p class="disciplina">Disciplina</p>
+              <p class="professor">Professor</p>
+              <p class="sala">Sala</p>
+            </td>
+            <td contenteditable="true">
+              <p class="disciplina">Disciplina</p>
+              <p class="professor">Professor</p>
+              <p class="sala">Sala</p>
+            </td>
+            <td contenteditable="true">
+              <p class="disciplina">Disciplina</p>
+              <p class="professor">Professor</p>
+              <p class="sala">Sala</p>
+            </td>
+            <td class="acao">
+              <button class="acao-limpar">
+                <i class="fa-solid fa-eraser"></i> Limpar linha
+              </button>
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
+                <i class="fa-solid fa-trash-can"></i> Remover linha
+              </button>
+            </td>
+          </tr>
+          <!--  -->
+          <tr class="linha">
             <th scope="row">13:00 - 13:50</th>
             <td contenteditable="true">
               <p class="disciplina">Disciplina</p>
@@ -68,7 +108,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -104,7 +147,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -140,7 +186,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -176,7 +225,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -212,7 +264,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -248,7 +303,10 @@
               <button class="acao-limpar">
                 <i class="fa-solid fa-eraser"></i> Limpar linha
               </button>
-              <button class="acao-remover">
+              <button class="acao-reiniciar">
+                <i class="fa-solid fa-rotate"></i> Reiniciar linha
+              </button>
+              <button class="acao-remover" onclick="removerLinha(0)">
                 <i class="fa-solid fa-trash-can"></i> Remover linha
               </button>
             </td>
@@ -257,5 +315,6 @@
       </table>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
